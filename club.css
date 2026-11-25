@@ -1,0 +1,159 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f1eb;
+            color: #3e302b;
+        }
+
+        header {
+            background-color: #60483c;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #8b6b5c;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0d8bd;
+        }
+
+        main {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 25px;
+            background-color: #e9ded3;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #795548;
+        }
+
+        .meeting-table {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #d6c5b8;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #8b6b5c;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f1eb;
+        }
+
+        .join {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        fieldset {
+            border: 1px solid #b9a092;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #795548;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #cbb9ab;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 10px 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #60483c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8b6b5c;
+        }
+
+        .rules {
+            background-color: #e9ded3;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .rules li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #60483c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }

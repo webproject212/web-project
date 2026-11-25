@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club</title>
+    <link rel="stylesheet" href="club.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Book Club</h1>
+        <p>Read Together, Share Together, Grow Together</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>About Our Book Club</h2>
+
+            <p>
+                Welcome to our reading community!
+                Join us to discover amazing books,
+                share your thoughts, and meet other readers
+            </p>
+
+            <p>
+                Every month, we choose a new book
+                and meet to discuss its story and ideas
+            </p>
+
+        </section>
+
+        <section class="meeting-table">
+
+            <h2>Upcoming Book Meetings</h2>
+
+            <p>Check our upcoming reading meetings:</p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>December 5</td>
+                        <td>5:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Alchemist</td>
+                        <td>Paulo Coelho</td>
+                        <td>December 12</td>
+                        <td>6:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wonder</td>
+                        <td>R. J. Palacio</td>
+                        <td>December 19</td>
+                        <td>4:00 PM</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="join">
+
+            <h2>Join Our Book Club</h2>
+            <p>Fill in the form below to become a member</p>
+
+            <form>
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age"
+                           min="13" max="100">
+
+                </fieldset>
+                <fieldset>
+
+                    <legend>Reading Preferences</legend>
+
+                    <label for="category">
+                        Favorite Book Category:
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">Choose a category</option>
+                        <option>Romance</option>
+                        <option>Mystery</option>
+                        <option>Fantasy</option>
+                        <option>Science Fiction</option>
+                        <option>Self Development</option>
+
+                    </select>
+
+                    <label>How often do you read?</label>
+                    <input type="radio" name="reading" value="daily">
+                    Daily
+                    <input type="radio" name="reading" value="weekly">
+                    Weekly
+                    <input type="radio" name="reading" value="monthly">
+                    Monthly
+
+
+                    <label>What would you like to join?</label>
+
+                    <input type="checkbox" name="activity" value="meetings">
+                    Book Discussions
+
+                    <br>
+
+                    <input type="checkbox" name="activity" value="recommendations">
+                    Book Recommendations
+
+                    <br>
+
+                    <input type="checkbox" name="activity" value="reading">
+                    Reading Challenges
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <label for="reason">
+                        Why do you want to join our club?
+                    </label>
+
+                    <textarea id="reason" rows="5"
+                              placeholder="Write your answer here..."></textarea>
+
+                </fieldset>
+
+                <button type="submit">Join Now</button>
+
+            </form>
+
+        </section>
+
+        <aside class="rules">
+
+            <h2>Our Book Club Rules</h2>
+
+            <ul>
+                <li>Respect everyone's opinions.</li>
+                <li>Read the selected book before meetings.</li>
+                <li>Share your thoughts and ideas.</li>
+                <li>Be kind and supportive to other readers.</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+</body>
+</html>
