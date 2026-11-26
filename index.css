@@ -1,0 +1,451 @@
+/* =====================================
+   1. GENERAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F5F0;
+    color: #35251F;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   2. HEADER
+===================================== */
+
+header {
+    background-color: #35251F;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header strong {
+    color: #FFFCF8;
+    font-size: 28px;
+}
+
+.header p {
+    color: #D2B89A;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    color: #FFFCF8;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #D2B89A;
+}
+
+
+/* =====================================
+   3. HOME SECTION
+===================================== */
+
+.home {
+    background-color: #EAE0D3;
+    padding: 120px 10%;
+    text-align: center;
+}
+
+.home h1 {
+    color: #35251F;
+    font-size: 55px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.home p {
+    color: #756256;
+    font-size: 17px;
+    max-width: 650px;
+    margin: 25px auto 35px;
+}
+
+.home a {
+    display: inline-block;
+    background-color: #79563F;
+    color: white;
+    padding: 13px 28px;
+    margin: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.home a:hover {
+    background-color: #35251F;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   4. FEATURES SECTION
+===================================== */
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 75px 8%;
+}
+
+.feature {
+    background-color: #FFFCF8;
+    width: 22%;
+    min-width: 200px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #E8DDD0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(53, 37, 31, 0.1);
+}
+
+.feature h3 {
+    color: #79563F;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #827469;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   5. CATEGORY SECTION
+===================================== */
+
+.category {
+    background-color: #F8F5F0;
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.category h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.category>p {
+    color: #827469;
+    margin-bottom: 35px;
+}
+
+.novel,
+.self,
+.tech,
+.business {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    min-width: 190px;
+    margin: 10px;
+    padding: 35px 15px;
+    background-color: #FFFCF8;
+    border: 1px solid #E8DDD0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.novel:hover,
+.self:hover,
+.tech:hover,
+.business:hover {
+    background-color: #EFE5D9;
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(53, 37, 31, 0.1);
+}
+
+.category a {
+    color: #35251F;
+}
+
+.category span {
+    font-size: 38px;
+}
+
+.category h3 {
+    font-size: 17px;
+    margin: 15px 0 8px;
+}
+
+.category a p {
+    color: #827469;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   6. POPULAR READS
+===================================== */
+
+.popular {
+    background-color: #EFE7DC;
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.popular h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.popular>p {
+    color: #827469;
+    margin-bottom: 35px;
+}
+
+.book {
+    display: inline-block;
+    vertical-align: top;
+    width: 21%;
+    min-width: 190px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #FFFCF8;
+    border: 1px solid #E8DDD0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(53, 37, 31, 0.1);
+}
+
+.book img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.book h3 {
+    color: #35251F;
+    margin-bottom: 5px;
+}
+
+.book p {
+    color: #827469;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.book a {
+    display: inline-block;
+    background-color: #79563F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.book a:hover {
+    background-color: #35251F;
+}
+
+
+/* =====================================
+   7. BOOK CLUB
+===================================== */
+
+.club {
+    background-color: #493329;
+    color: #FFFCF8;
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.club h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.club p {
+    color: #E0CDB9;
+    margin-bottom: 30px;
+}
+
+.club a {
+    display: inline-block;
+    background-color: #D2B89A;
+    color: #35251F;
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.club a:hover {
+    background-color: #FFFCF8;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   8. FOOTER
+===================================== */
+
+footer {
+    background-color: #261A15;
+    color: #FFFCF8;
+    padding: 55px 8% 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-about,
+.footer-links,
+.footer-categ {
+    width: 30%;
+}
+
+.footer h2,
+.footer h3 {
+    color: #D2B89A;
+    margin-bottom: 18px;
+}
+
+.footer p {
+    color: #C7B9AE;
+    font-size: 14px;
+}
+
+.footer a {
+    display: block;
+    color: #C7B9AE;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #59473D;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #B6A69A;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   9. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        padding: 80px 6%;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .features {
+        padding: 50px 6%;
+    }
+
+    .feature {
+        width: 45%;
+    }
+
+    .novel,
+    .self,
+    .tech,
+    .business {
+        width: 42%;
+    }
+
+    .book {
+        width: 42%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-categ {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .feature,
+    .novel,
+    .self,
+    .tech,
+    .business,
+    .book {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
